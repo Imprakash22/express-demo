@@ -32,7 +32,7 @@ app.get('/api/course/:id', (req,res)  =>{
 });
 //post method......................
 app.post('/api/course', (req,res)  =>{
-    const schema ={
+    const schema = {
         name: Joi.string().min(3).required()
 
     };
